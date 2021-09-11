@@ -1,0 +1,76 @@
+﻿<Window x:Class="Tarea2Aplicada.Ejercicios_Del_Capitulo_2.Cap4Ejercicio5"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Tarea2Aplicada.Ejercicios_Del_Capitulo_2"
+        mc:Ignorable="d"
+        Title="Cap4Ejercicio5" Height="450" Width="800">
+    <Grid>
+
+        <StackPanel Orientation="Vertical">
+
+            <StackPanel>
+                <Label Content="Ingrese la cantidad de personas a evaluar"/>
+
+            </StackPanel>
+
+            <StackPanel Orientation="Horizontal">
+                <TextBox x:Name="EvaluarpTextBox" Height="35" Width="65"/>
+                <Button x:Name="EvaluarPButton" Content="Evaluar Personas" Click="EvaluarPButton_Click" Margin="40,0"/>
+
+
+            </StackPanel>
+
+            <StackPanel>
+                <Label Content="Ingrese la edad de la persona"/>
+            </StackPanel>
+
+            <StackPanel Orientation="Horizontal">
+                <Button x:Name="EvaluarEButton" Content="Evaluar Edad" Click="EvaluarEButton_Click" Margin="40,0"/>
+                <TextBox x:Name="EdadeTextBox" Height="35" Width="65"/>
+            </StackPanel>
+
+
+
+
+
+            <StackPanel>
+                <Label Content="Ingrese la edad promedio"/>
+
+            </StackPanel>
+
+            <StackPanel Orientation="Horizontal">
+
+                <TextBox x:Name="PromedioTextBox" Height="30" Width="65" IsReadOnly="True"/>
+            </StackPanel>
+
+            <StackPanel>
+                <Label Content="Ingrese la edad Mayor"/>
+            </StackPanel>
+
+            <StackPanel Orientation="Horizontal">
+                <TextBox x:Name="MayorTextBox" Height="30" Width="65" IsReadOnly="True"/>
+            </StackPanel>
+
+
+            <StackPanel>
+                <Label Content="Ingrese la edad Menor"/>
+            </StackPanel>
+
+            <StackPanel Orientation="Horizontal">
+
+                <TextBox   x:Name="MenorTextBox" Height="30" Width="65" IsReadOnly="True"/>
+
+            </StackPanel>
+
+
+            <StackPanel Orientation="Horizontal"   Margin="0,50">
+                <Button x:Name="EvaluarButton" Content="Evaluar Edad" Click="EvaluarButton_Click" Margin="40,0"/>
+
+            </StackPanel>
+
+        </StackPanel>
+
+    </Grid>
+</Window>
